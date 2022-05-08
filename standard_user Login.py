@@ -12,3 +12,6 @@ element.send_keys("standard_user")
 element = driver.find_element(By.ID, "password")
 element.clear()
 element.send_keys("secret_sauce")
+
+element = driver.find_element(By.ID, "login-button")
+element.click()
