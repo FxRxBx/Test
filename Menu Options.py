@@ -14,6 +14,10 @@ element = driver.find_element(By.ID, "password")
 element.clear()
 element.send_keys("secret_sauce")
 
+element = driver.find_element(By.ID, "login-button")
+element.click()
+time.sleep(3)
+
 element = driver.find_element(By.ID, "react-burger-menu-btn")
 element.click()
 time.sleep(2)
