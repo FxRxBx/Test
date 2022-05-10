@@ -96,3 +96,33 @@ time.sleep(3)
 element = driver.find_element(By.ID, "react-burger-menu-btn")
 element.click()
 time.sleep(2)
+
+element = driver.find_element(By.ID, "about_sidebar_link")
+element.click()
+time.sleep(3)
+
+driver.back()
+
+element = driver.find_element(By.ID, "item_4_img_link")
+element.click()
+time.sleep(3)
+
+element = driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack")
+element.click()
+time.sleep(3)
+
+element = driver.find_element(By.ID, "react-burger-menu-btn")
+element.click()
+time.sleep(2)
+
+element = driver.find_element(By.ID, "reset_sidebar_link")
+element.click()
+time.sleep(3)
+
+
+element = driver.find_element(By.ID, "inventory_sidebar_link")
+element.click()
+time.sleep(3)
+
+element = driver.find_element(By.ID, "logout_sidebar_link")
+element.click()
