@@ -1,8 +1,9 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 import time
 
-driver = webdriver.Chrome('/Users/fxrxbx/Downloads/chromedriver')
+driver: WebDriver = webdriver.Chrome('/Users/fxrxbx/Downloads/chromedriver')
 
 driver.get("https://qa-challenge.codesubmit.io/")
 
@@ -22,17 +23,23 @@ element = driver.find_element(By.ID, "react-burger-menu-btn")
 element.click()
 time.sleep(2)
 
-element = driver.find_element(By.CLASS_NAME, "inventory_sidebar_link")
+element = driver.find_element(By.ID, "inventory_sidebar_link")
 element.click()
 time.sleep(3)
 
-element = driver.find_element(By.CLASS_NAME, "about_sidebar_link")
+element = driver.find_element(By.ID, "about_sidebar_link")
 element.click()
 time.sleep(3)
 
-element = driver.find_element(By.CLASS_NAME, "reset_sidebar_link")
+driver.back()
+
+element = driver.find_element(By.ID, "react-burger-menu-btn")
+element.click()
+time.sleep(2)
+
+element = driver.find_element(By.ID, "reset_sidebar_link")
 element.click()
 time.sleep(3)
 
-element = driver.find_element(By.CLASS_NAME, "logout_sidebar_link")
+element = driver.find_element(By.ID, "logout_sidebar_link")
 element.click()
